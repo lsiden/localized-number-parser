@@ -1,8 +1,8 @@
 {
-  "name": "currency-parser",
+  "name": "number-parser",
   "version": "1.0.0",
   "description": "Parse currency string according to locale.",
-  "main": "currency-parser.js",
+  "main": "number-parser.js",
   "author": "Lawrence Siden",
   "license": "MIT",
   "devDependencies": {
