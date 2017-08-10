@@ -19,6 +19,11 @@
       ".*": "./node_modules/babel-jest"
     }
   },
+  "babel": {
+    "presets": [
+      "es2015", "react"
+    ]
+  },
   "scripts": {
     "test": "jest"
   }
