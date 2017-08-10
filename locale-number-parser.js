@@ -1,7 +1,5 @@
 // ES6
 
-dump(process.env.LANG, 'LANG')
-
 export default class {
 	constructor(locale='en-US') {
 		const formatter = new Intl.NumberFormat(locale)
