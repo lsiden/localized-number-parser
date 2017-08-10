@@ -1,7 +1,5 @@
 # NumberParser
 
-## Summary
-
 Parse numbers in a given locale,
 honoring decimal and digit separators.
 

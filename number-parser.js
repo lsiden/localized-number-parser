@@ -48,7 +48,7 @@ function getLocalLanguage() {
 }
 
 function polyFillMissingLocales() {
-	if (global.Intl) {
+	if (Intl) {
 		var areIntlLocalesSupported = require('intl-locales-supported');
 
 		var localesMyAppSupports = [
@@ -69,7 +69,7 @@ function polyFillMissingLocales() {
 	    }
 	} else {
 	    // No `Intl`, so use and load the polyfill.
-	    global.Intl = require('intl');
+	    Intl = require('intl');
 	}
 }
 polyFillMissingLocales()
