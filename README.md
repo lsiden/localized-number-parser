@@ -6,7 +6,7 @@ honoring decimal and digit separators.
 ## Description
 
 In the United States, it is the custom to write numbers as "123,456.78",
-but in Germany, that would be written as "123.456,78".
+but in Germany, that same number would be written as "123.456,78".
 
 ## Example
 
@@ -21,4 +21,4 @@ lsiden@gmail.com
 
 ## License
 
-MIT
+[MIT](https://opensource.org/licenses/MIT)
