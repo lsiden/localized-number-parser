@@ -1,4 +1,4 @@
-# LocaleNumberParser
+# LocalizedNumberParser
 
 Parse numbers in a given locale,
 honoring decimal and digit separators.
@@ -10,7 +10,7 @@ but in Germany, that would be written as "123.456,78".
 
 ## Example
 
-const parser = new LocaleNumberParser('de')
+const parser = new LocalizedNumberParser('de')
 parser.parse('123.456,78') // 123456.78
 
 ## Author
