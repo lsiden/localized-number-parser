@@ -1,4 +1,4 @@
-var path = require('path');
+var path = require('path')
 
 module.exports = {
     entry: './localized-number-parser.js',
@@ -6,6 +6,5 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'localized-number-parser.bundle.js',
     },
-    devtool: 'inline-source-map',
-    // debug: true,
-};
+    devtool: 'source-map',
+}
