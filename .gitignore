@@ -1,7 +1,6 @@
 node_modules/
+dist/
 *.lock
 *.log
 .yarnclean
 *.sublime-*
-bundle.js
-bundle.js.map
