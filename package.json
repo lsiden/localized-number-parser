@@ -1,5 +1,5 @@
 {
-  "name": "number-parser",
+  "name": "localized-number-parser",
   "version": "1.0.0",
   "description": "Parse currency string according to locale.",
   "main": "number-parser.js",
