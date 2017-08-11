@@ -5,7 +5,7 @@
   "main": "dist/localized-number-parser.bundle.js",
   "author": "Lawrence Siden",
   "license": "MIT",
-  "entry": "dist/localized-number-parser.bundle.js",
+  "entry": "dist/localized-number-parser.js",
   "devDependencies": {
     "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
@@ -26,6 +26,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "NODE_ENV=prod webpack"
+    "build": "cp localized-number-parser.js dist/"
   }
 }
