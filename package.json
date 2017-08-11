@@ -5,7 +5,7 @@
   "main": "dist/localized-number-parser.bundle.js",
   "author": "Lawrence Siden",
   "license": "MIT",
-  "entry": "dist/index.js",
+  "main": "dist/index.js",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
