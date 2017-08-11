@@ -6,7 +6,7 @@ export default class {
 		const [digiSep, deciSep] = this.constructor._getSeparators(formatter)
 		const partPat = `[0-9${digiSep}]*`
 		this.formatter = formatter
-		this.reNumber = new RegExp(`^\\s*(${partPat})(?:\\${deciSep}(${partPat})?)\\s*$`)
+		this.reNumber = new RegExp(`^\\s*(${partPat})(?:\\${deciSep}(${partPat}))?\\s*$`)
 		// dump(this.reNumber, 'this.reNumber')
 		this.reNumberDigiSep = new RegExp('\\' + digiSep, 'g')
 	}
@@ -16,8 +16,10 @@ export default class {
 		if (!m) {
 			return undefined
 		}
-		const wholePart = m[1] ? m[1].replace(this.reNumberDigiSep, '') : '0'
-		const fractionPart = m[2] ? m[2].replace(this.reNumberDigiSep, '') : '0'
+		const wholePart = m[1] ? m[1].replace(this.reNumberDigiSep, '') : ''
+		const fractionPart = m[2] ? m[2].replace(this.reNumberDigiSep, '') : ''
+		// dump(wholePart, 'wholePart')
+		// dump(fractionPart, 'fractionPart')
 		const val = Number(wholePart + '.' + fractionPart)
 		return isNaN(val) ? undefined : val
 	}
