@@ -1,4 +1,4 @@
-import LocalizedNumberParser from './localized-number-parser'
+import LocalizedNumberParser from './index'
 
 describe('LocalizedNumberParser', function() {
 	beforeEach(function() {
