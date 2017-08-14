@@ -2,7 +2,7 @@
   "name": "localized-number-parser",
   "version": "1.0.0",
   "description": "Parse currency string according to locale.",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "author": "Lawrence Siden",
   "license": "MIT",
   "devDependencies": {
@@ -28,6 +28,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel index.js | uglifyjs > dist/index.min.js"
+    "build": "babel index.js -o dist/index.js && uglifyjs dist/index.js > dist/index.min.js"
   }
 }
