@@ -1,6 +1,6 @@
 {
   "name": "localized-number-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse currency string according to locale.",
   "main": "dist/index.js",
   "author": "Lawrence Siden",
@@ -9,8 +9,7 @@
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
-    "jest": "^20.0.4",
-    "uglify-js": "^3.0.27"
+    "jest": "^20.0.4"
   },
   "dependencies": {
     "intl": "^1.2.5",
@@ -28,6 +27,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel index.js -o dist/index.js && uglifyjs dist/index.js > dist/index.min.js"
+    "build": "babel index.js -o dist/index.js"
   }
 }
